@@ -1,0 +1,61 @@
+.App {
+  text-align: center;
+}
+
+.nav {
+  padding: 10px;
+  margin: 0 10px 0 10px;
+  background-color: black;
+  border-radius: 0 5px 5px;
+}
+
+.nav li {
+  display: inline-block;
+  list-style-type: none;
+  margin-right: 100px;
+}
+
+.nav li a {
+  text-decoration: none;
+  position: relative;
+  color: #e4e4e4;
+}
+
+.nav li a:hover {
+  color: #e4e4e4;
+}
+
+.nav li a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #e4e4e4;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.nav li a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.banner {
+  width: 500px;
+  height: auto;
+  display: inherit;
+  left: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+/*# sourceMappingURL=index.css.map */
